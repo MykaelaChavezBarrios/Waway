@@ -10,5 +10,16 @@ categories.forEach((category) => {
 
         e.currentTarget.classList.toggle('active');
         categoryActive = category.dataset.category;
+
+        // active question container
+
+        contQuestions.forEach((container) => {
+            if (container.dataset.category === categoryActive) {
+                container.classList.add('active');
+            } else {
+                container.classList.remove('active');
+            }
+        });
+
     });
 });
