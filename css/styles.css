@@ -143,3 +143,32 @@ body{
 .cont-question.active img{
     transform: rotate(45deg);
 }
+
+/* =========================================================== */
+/* ====================== Responsive ========================= */
+/* =========================================================== */
+
+@media screen and (max-width: 800px) {
+    .categories{
+        grid-template-columns: 1fr 1fr;
+    }
+    .category {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .category svg{
+        width: 30px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .categories{
+        grid-template-columns: 1fr;
+    }    
+}
