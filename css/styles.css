@@ -149,6 +149,42 @@ body{
 }
 
 /* =========================================================== */
+/* ====================== Contact Us ========================= */
+/* =========================================================== */
+
+.contact_us{
+    background: var(--light-pink);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    border: 0;
+}
+:focus {
+    outline: 1px solid var(--orange);
+}
+.btn{
+    background-color: var(--green);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    align-self: center;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+/* =========================================================== */
 /* ====================== Responsive ========================= */
 /* =========================================================== */
 
