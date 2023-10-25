@@ -88,10 +88,15 @@ body{
 /* =========================================================== */
 
 .cont-questions{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     gap: 40px;
 }
+
+.cont-questions.active{
+    display: grid;
+}
+
 
 .cont-question{
     background: #fff;
