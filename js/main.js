@@ -5,10 +5,15 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal('.home-content', { delay: 200, origin: 'top' });
-sr.reveal('.home-image', { delay: 500, origin: 'top' });
-sr.reveal('.home-sci', { delay: 380, origin: 'bottom' });
+sr.reveal('.home-content', { delay: 50, origin: 'top' });
+sr.reveal('.home-image', { delay: 60, origin: 'top' });
+sr.reveal('.home-sci', { delay: 50, origin: 'bottom' });
 
 
-sr.reveal('.benef-content', { delay: 700, origin: 'right' });
-sr.reveal('.benef-image', { delay: 800, origin: 'left' });
+sr.reveal('.benef-content', { delay: 50, origin: 'right' });
+sr.reveal('.benef-image', { delay: 60, origin: 'left' });
+
+
+sr.reveal('.what_we_offer', { delay: 70, origin: 'left' });
+sr.reveal('.frequent_questions', { delay: 60, origin: 'right' });
+sr.reveal('.contact_us', { delay: 70, origin: 'left' });
