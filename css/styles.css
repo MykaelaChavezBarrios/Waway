@@ -228,35 +228,113 @@ body{
 /* =========================================================== */
 
 .contact_us{
-    background: var(--light-pink);
+    max-width: 900px;
+    width: 90%;
+    margin: 60px auto;
+    margin-top: 80px;
+    box-shadow: var(--sombra);
+    border-radius: 20px;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+    display: flex;
 }
 
-form{
+.left-contact{
+    width: 40%;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.left-contact img{
+    max-width: 260px;
+    border-radius: 180px;
+}
+
+.right-contact{
+    width: 60%;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
-label{
-    margin-bottom: 10px;
-}
-
-input, textarea {
+.contact_us h2{
+    text-align: center;
+    color: var(--green);
     margin-bottom: 20px;
-    border: 0;
 }
-:focus {
-    outline: 1px solid var(--orange);
+
+.contact_us p{
+    max-width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
 .btn{
     background-color: var(--green);
-    width: 150px;
+    width: 300px;
     height: 40px;
     border-radius: 10px;
     align-self: center;
     cursor: pointer;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    color: #fff;
+    box-shadow: var(--sombra);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-bx{
+    position: relative;
+    width: 300px;
+    margin: 16px;
+}
+
+.input-bx input, textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0 0 12px 0 rgba(182, 182, 182, 0.5);;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.input-bx span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    padding-top: 8px;
+    font-size: 1rem;
+    color: var(--green);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-bx input:focus ~ span, .input-bx input:valid ~ span,
+.input-bx textarea:focus ~ span, .input-bx textarea:valid ~ span  {
+    color: #8C876A;
+    font-size: 0.75rem;
+    transform: translateX(10px) translateY(-7px);
+    padding: 0 10px;
+    background: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.input-bx input:focus, .input-bx textarea:focus{
+    border: 2px solid var(--green);
+    outline: none;
 }
 
 /* =========================================================== */

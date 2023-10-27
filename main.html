@@ -403,22 +403,33 @@
         </div>
 
         <div class="contact_us">
-            <h2 class="subtitle">Déjanos tus datos</h2>
+            <div class="left-contact">
+                <img src="./img/mommy.jpg" alt="">
+            </div>
+            <div class="right-contact">
+                <h2 class="subtitle">Habla con nosotros</h2>
+                <p>¡Estamos aquí para ayudarte! Si tienes alguna pregunta, comentario o necesitas asistencia, no dudes
+                    en ponerte en contacto con nosotros.</p>
+                <form action="https://formsubmit.co/wawaycoperu@gmail.com" method="POST">
+                    <div class="input-bx">
+                        <input type="text" name="name" id="name" required>
+                        <span>Nombre:</span>
+                    </div>
+                    <div class="input-bx">
+                        <input type="email" name="email" id="email" required>
+                        <span>Email:</span>
+                    </div>
+                    <div class="input-bx">
+                        <textarea name="comment" id="comment" cols="30" rows="5" required></textarea>
+                        <span>Comentario:</span>
+                    </div>
 
-            <form action="https://formsubmit.co/tamychaba.1304@gmail.com" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name">
+                    <input class="btn" type="submit" value="Enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/main.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
 
-                <label for="email">Correo electrónico</label>
-                <input type="email" name="email" id="email">
-
-                <label for="comment">Comentario</label>
-                <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
-
-                <input class="btn" type="submit" value="Enviar">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/main.html">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
         </div>
     </main>
     <script src="./js/categories.js"></script>
