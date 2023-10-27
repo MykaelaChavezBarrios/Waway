@@ -9,11 +9,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Outfit&display=swap"
         rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Main</title>
 </head>
 
 <body>
+
     <main>
+        <div class="principal">
+            <header class="header">
+                <div class="logo">
+                    <a href="#" class="logo"><img src="img/logo.png" alt="Momis Logo"></a>
+                    <a href="#" class="logo_text">Waway</a>
+                </div>
+                <nav class="navbar">
+                    <a href="#home">Menú</a>
+                    <a href="#home">Guía de Uso</a>
+                    <a href="#benef">Beneficios</a>
+                    <a href="#contact_us">¡Contáctanos!</a>
+                </nav>
+            </header>
+            <section class="home" id="home">
+                <div class="home-content">
+                    <h1>Creciendo juntos, con amor y tecnología!</h1>
+                    <h3>Descubre cómo nuestra aplicación hace que la crianza sea más fácil y especial en cada etapa de
+                        tu
+                        bebé</h3>
+                    <p> Hagamos que cada día de la crianza sea inolvidable</p>
+                    <div class="btn-box">
+                        <a href="#"><i class='bx bxl-apple'></i></a>
+                        <a href="#"><i class='bx bxl-play-store'></i></a>
+                    </div>
+                </div>
+
+                <div class="home-image">
+                    <img src="img/main.png">
+                </div>
+
+            </section>
+
+            <section class="benef" id="benef">
+                <div class="benef-image">
+                    <img src="img/beneficios.png">
+                </div>
+
+                <div class="benef-content">
+                    <div class="h2">
+                        <i class='bx bx-lock-alt'></i>
+                        <h4>Seguridad</h4>
+                        <p>Garantiza la seguridad de tu bebé y tranquiliza tu mente. </p>
+                    </div>
+                    <div class="h2">
+                        <i class='bx bx-alarm-snooze'></i>
+                        <h4>Dormir</h4>
+                        <p>Aporta una mejor calidad del sueño a toda la familia.</p>
+                    </div>
+                    <div class="h2">
+                        <i class='bx bx-photo-album'></i>
+                        <h4>Recuerdos</h4>
+                        <p>Capture momentos que no puede perderse y comparta la alegría.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <div class="what_we_offer">
             <h2 class="subtitle">Descubre lo que Waway tiene para ofrecerte</h2>
             <p class="subtext">Waway está aquí para apoyarte en tu viaje de maternidad. Te ofrecemos las herramientas
@@ -402,7 +461,7 @@
             </div>
         </div>
 
-        <div class="contact_us">
+        <div class="contact_us" id="contact_us">
             <div class="left-contact">
                 <img src="./img/mommy.jpg" alt="">
             </div>
@@ -432,6 +491,17 @@
 
         </div>
     </main>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="redessociales">
+                <a href="https://www.facebook.com/nayus.chavez" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/nayuschavez/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:wawaycoperu@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/categories.js"></script>
     <script src="./js/questions.js"></script>
 </body>
